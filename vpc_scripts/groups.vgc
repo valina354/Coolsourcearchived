@@ -1,0 +1,120 @@
+//-----------------------------------------------------------------------------
+//	GROUPS.VGC
+//
+//	Group Configurations for all Source(TM) Projects
+//-----------------------------------------------------------------------------
+
+///////////////////////
+// Group definitions //
+///////////////////////
+
+$Group "gamedlls"
+{
+	"client"
+	"server"
+}
+
+$Group "game"
+{
+	"client"
+	"mathlib"
+	"raytrace"
+	"server"
+	"tier1"
+	"vgui_controls"
+	"engine"
+	"materialsystem"
+	"particles"
+	"launcher"
+	"launcher_main"
+	"gameui"
+	"scenefilecache"
+	"studiorender"
+	"shaderapidx9"
+	"shaderapidx11"
+	"stdshader_dbg"
+	"stdshader_dx6"
+	"stdshader_dx7"
+	"stdshader_dx8"
+    "stdshader_dx9"
+	"stdshader_dx11"
+	"shaderlib_dx11"
+	"filesystem_stdio"
+	"filesystem_steam"
+	"vpklib"
+	"vtf"
+	"bsppack"
+	"bspzip"
+}
+
+$Group "shaders"
+{
+	"game_shader_dx9"
+	"shaderapidx11"
+	"stdshader_dbg"
+	"stdshader_dx6"
+	"stdshader_dx7"
+	"stdshader_dx8"
+    "stdshader_dx9"
+	"stdshader_dx11"
+	"shaderlib_dx11"
+}
+
+$Group "everything"
+{
+	"captioncompiler"
+	"client"
+	"fgdlib"
+	"game_shader_dx9"
+	"glview"
+	"height2normal"
+	"mathlib"
+	"motionmapper"
+	"phonemeextractor"
+	"particles"
+	"raytrace"
+	"qc_eyes"
+	"launcher"
+	"launcher_main"
+	"gameui"
+	"server"
+	"serverplugin_empty"
+	"scenefilecache"
+	"shaderapidx9"
+	"shaderapidx11"
+	"stdshader_dbg"
+	"stdshader_dx6"
+	"stdshader_dx7"
+	"stdshader_dx8"
+    "stdshader_dx9"
+	"stdshader_dx11"
+	"shaderlib_dx11"
+	"tgadiff"
+	"tier1"
+	"vbsp"
+	"vgui_controls"
+	"vice"
+	"vrad_dll"
+	"vrad_launcher"
+	"vtf2tga"
+	"vtfdiff"
+	"vvis_dll"
+	"vvis_launcher"
+	"engine"
+	"materialsystem"
+	"studiorender"
+	"filesystem_stdio"
+	"filesystem_steam"
+	"vpklib"
+	"vtf"
+	"bsppack"
+	"bspzip"
+}
+
+$Group "dedicated"
+{
+	"mathlib"
+	"server"
+	"tier1"
+}
+

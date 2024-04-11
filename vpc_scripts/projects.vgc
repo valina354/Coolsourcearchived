@@ -1,0 +1,299 @@
+//-----------------------------------------------------------------------------
+//	PROJECTS.VGC
+//
+//	Project Configurations for all Source(TM) Projects
+//-----------------------------------------------------------------------------
+
+/////////////////////////
+// Project definitions //
+/////////////////////////
+
+$Project "appframework"
+{
+	"appframework\appframework.vpc" 
+}
+
+$Project "captioncompiler"
+{
+	"utils\captioncompiler\captioncompiler.vpc" 
+}
+
+
+$Project "client"
+{
+	"game\client\client_hl2mp.vpc"		[($WIN32||$WIN64||$POSIX) && $HL2MP]
+	"game\client\client_episodic.vpc"	[($WIN32||$WIN64||$POSIX) && $EPISODIC]
+	"game\client\client_hl2.vpc"		[($WIN32||$WIN64||$POSIX) && $HL2]
+	"game\client\client_sdk.vpc"		[($WIN32||$WIN64||$POSIX) && $SDK]
+}
+
+$Project "datamodel"
+{
+	"datamodel\datamodel.vpc"	
+}
+
+$Project "datacache"
+{
+	"datacache\datacache.vpc"	
+}
+
+$Project "dmserializers"
+{
+	"dmserializers\dmserializers.vpc"		
+}
+
+$Project "fgdlib"
+{
+	"fgdlib\fgdlib.vpc" 
+}
+
+$Project "game_shader_dx9"
+{
+	"materialsystem\stdshaders\game_shader_dx9_hl2mp.vpc" [$HL2MP]
+}
+
+$Project "glview"
+{
+	"utils\glview\glview.vpc" [$WINDOWS]
+}
+
+$Project "launcher" 
+{
+	"launcher\launcher.vpc"
+}
+
+$Project "launcher_main"
+{
+	"launcher_main\launcher_main.vpc"
+}
+
+$Project "gameui"
+{
+	"gameui\gameui.vpc"
+}
+
+$Project "height2normal"
+{
+	"utils\height2normal\height2normal.vpc" [$WINDOWS]
+}
+
+$Project "server"
+{
+	"game\server\server_hl2mp.vpc"		[($WINDOWS||$POSIX) && $HL2MP]
+	"game\server\server_episodic.vpc"	[($WINDOWS||$POSIX) && $EPISODIC]
+	"game\server\server_hl2.vpc"		[($WINDOWS||$POSIX) && $HL2]
+	"game\server\server_sdk.vpc"		[($WINDOWS||$POSIX) && $SDK]
+}
+
+$Project "mathlib"
+{
+	"mathlib\mathlib.vpc" [$WINDOWS||$X360||$POSIX]
+}
+
+$Project "motionmapper"
+{
+	"utils\motionmapper\motionmapper.vpc" [$WINDOWS]
+}
+
+$Project "phonemeextractor"
+{
+	"utils\phonemeextractor\phonemeextractor.vpc" [$WINDOWS]
+}
+
+$Project "imgui"
+{
+	"imgui\imgui.vpc" 
+}
+$Project "particles"
+{
+	"particles\particles.vpc" 
+}
+
+$Project "raytrace"
+{
+	"raytrace\raytrace.vpc" [$WINDOWS||$X360||$POSIX]
+}
+
+$Project "qc_eyes"
+{
+	"utils\qc_eyes\qc_eyes.vpc" [$WINDOWS]
+}
+
+$Project "serverplugin_empty"
+{
+	"utils\serverplugin_sample\serverplugin_empty.vpc" [$WINDOWS||$POSIX]
+}
+
+$Project "scenefilecache"
+{
+	"scenefilecache\scenefilecache.vpc" [$WINDOWS||$POSIX]
+}
+
+$Project "shaderapidx9"
+{
+	"materialsystem\shaderapidx9\shaderapidx9.vpc"
+}
+
+$Project "shaderapidx11"
+{
+	"materialsystem\shaderapidx11\shaderapidx11.vpc"
+}
+
+$Project "shaderapidxvk"
+{
+	"materialsystem\shaderapidxvk\shaderapidxvk.vpc"
+}
+$Project "stdshader_dbg"
+{
+	"materialsystem\stdshaders\stdshader_dbg.vpc" [$WINDOWS||$X360||$POSIX]
+}
+
+$Project "stdshader_dx6"
+{
+	"materialsystem\stdshaders\stdshader_dx6.vpc" [$WINDOWS]
+}
+
+$Project "stdshader_dx7"
+{
+	"materialsystem\stdshaders\stdshader_dx7.vpc" [$WINDOWS]
+}
+
+$Project "stdshader_dx8"
+{
+	"materialsystem\stdshaders\stdshader_dx8.vpc" [$WINDOWS]
+}
+
+$Project "stdshader_dx9"
+{
+	"materialsystem\stdshaders\stdshader_dx9.vpc" [$WINDOWS||$X360||$POSIX]
+}
+
+$Project "stdshader_dx11"
+{
+	"materialsystem\stdshadersdx11\stdshader_dx11.vpc"
+}
+
+$Project "shaderlib_dx11"
+{
+	"materialsystem\shaderlib_dx11\shaderlib.vpc"
+}
+
+$Project "tgadiff"
+{
+	"utils\tgadiff\tgadiff.vpc" [$WINDOWS]
+}
+
+$Project "tier0"
+{
+	"tier0\tier0.vpc" 	[$WINDOWS || $X360||$POSIX]
+}
+
+$Project "tier1"
+{
+	"tier1\tier1.vpc" 	[$WINDOWS || $X360||$POSIX]
+}
+
+$Project "tier2"
+{
+	"tier2\tier2.vpc" 	[$WINDOWS || $X360||$POSIX]
+}
+
+$Project "tier3"
+{
+	"tier3\tier3.vpc" 	[$WINDOWS || $X360||$POSIX]
+}
+
+$Project "vbsp"
+{
+	"utils\vbsp\vbsp.vpc" [$WINDOWS]
+}
+
+$Project "vgui_controls"
+{
+	"vgui2\vgui_controls\vgui_controls.vpc" [$WIN32||$X360||$POSIX]
+}
+
+$Project "vice"
+{
+	"utils\vice\vice.vpc" [$WINDOWS]
+}
+
+$Project "vrad_dll"
+{
+	"utils\vrad\vrad_dll.vpc" [$WINDOWS]
+}
+
+$Project "vrad_launcher"
+{
+	"utils\vrad_launcher\vrad_launcher.vpc" [$WINDOWS]
+}
+
+$Project "vtf2tga"
+{
+	"utils\vtf2tga\vtf2tga.vpc" [$WINDOWS]
+}
+
+$Project "vtfdiff"
+{
+	"utils\vtfdiff\vtfdiff.vpc" [$WINDOWS]
+}
+
+$Project "vstdlib"
+{
+	"vstdlib\vstdlib.vpc" [$WINDOWS]
+}
+
+$Project "vvis_dll"
+{
+	"utils\vvis\vvis_dll.vpc" [$WINDOWS]
+}
+
+$Project "vvis_launcher"
+{
+	"utils\vvis_launcher\vvis_launcher.vpc" [$WINDOWS]
+}
+
+$Project "vpklib"
+{
+	"vpklib/vpklib.vpc" [$WINDOWS]
+}
+
+$Project "vtf"
+{
+	"vtf/vtf.vpc" [$WINDOWS]
+}
+
+$Project "engine"
+{
+	"engine/engine.vpc" [$WINDOWS]
+}
+
+$Project "materialsystem"
+{
+	"materialsystem/materialsystem.vpc" [$WINDOWS]
+}
+
+$Project "studiorender"
+{
+	"studiorender\studiorender.vpc" [$WINDOWS]
+}
+
+$Project "filesystem_stdio"
+{
+	"filesystem/filesystem_stdio.vpc" [$WINDOWS]
+}
+
+$Project "filesystem_steam"
+{
+	"filesystem/filesystem_steam.vpc" [$WINDOWS]
+}
+
+$Project "bsppack"
+{
+	"utils\bsppack\bsppack.vpc" [$WINDOWS]
+}
+
+$Project "bspzip"
+{
+	"utils\bspzip\bspzip.vpc" [$WINDOWS]
+}
